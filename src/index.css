@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-image: url("./sky.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+@layer components {
+  .btn-primary {
+    @apply relative h-3/4 mb-1 mt-1 box-shadow-standard overflow-hidden pb-2 text-3xl w-10/12 mx-auto text-center border-solid border-2 border-black mx-2 my-2 rounded-lg text-white bg-gradient-to-b from-gray-800 to-gray-600 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:bg-gradient-to-b hover:from-gray-900 hover:to-gray-700 active:scale-95;
+    background: linear-gradient(45deg, #2e2e2e 10%, #262626 90%);
+  }
+}
+@layer components {
+  .btn-secondary {
+    @apply flex box-shadow-standard justify-center pb-2 items-center h-10  overflow-hidden text-3xl w-1/5 mx-auto text-center border-solid border-2 border-orange-900 mx-2 my-2 rounded-lg text-white bg-gradient-to-b from-orange-800 to-gray-600 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:bg-gradient-to-b hover:from-gray-900 hover:to-gray-700 active:scale-95;
+    background: linear-gradient(darkorange, #7c4400);
+  }
+}
